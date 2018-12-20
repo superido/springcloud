@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: microservice-gateway-zuul
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    ip-address: true
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    order-service: /metlife/**
