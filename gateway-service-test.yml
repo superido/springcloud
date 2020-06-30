@@ -16,4 +16,4 @@ eureka:
 zuul:
   ignoredServices: '*'
   routes:
-    order-service: /metlife/**
+    order-service: /api/**
